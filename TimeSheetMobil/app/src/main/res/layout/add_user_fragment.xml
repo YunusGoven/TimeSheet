@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AJOUTER UN UTILISATEUR"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="@drawable/corner_color"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/new_pseudo"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:hint="pseudo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:background="@drawable/corner_color"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/new_password"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:hint="mot de passe"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/new_pseudo"
+        app:layout_constraintStart_toStartOf="@+id/new_pseudo"
+        app:layout_constraintTop_toBottomOf="@+id/new_pseudo" />
+
+    <EditText
+        android:background="@drawable/corner_color"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/new_name"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:hint="prénom"
+        app:layout_constraintEnd_toEndOf="@+id/new_password"
+        app:layout_constraintStart_toStartOf="@+id/new_password"
+        app:layout_constraintTop_toBottomOf="@+id/new_password" />
+
+    <EditText
+        android:background="@drawable/corner_color"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/new_surname"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:hint="nom de famille"
+        app:layout_constraintEnd_toEndOf="@+id/new_name"
+        app:layout_constraintStart_toStartOf="@+id/new_name"
+        app:layout_constraintTop_toBottomOf="@+id/new_name" />
+
+    <EditText
+        android:background="@drawable/corner_color"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/new_email"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:hint="email"
+        app:layout_constraintEnd_toEndOf="@+id/new_surname"
+        app:layout_constraintStart_toStartOf="@+id/new_surname"
+        app:layout_constraintTop_toBottomOf="@+id/new_surname" />
+
+
+    <Button
+        android:id="@+id/add_user"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:text="Ajouter utilisateur"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/new_password"
+        app:layout_constraintStart_toStartOf="@+id/new_password"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="506dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

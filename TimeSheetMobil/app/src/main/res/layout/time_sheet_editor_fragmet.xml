@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/week_number"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/week_number"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/corner_color"
+        android:id="@+id/monday_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lundi_day_letter"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:text="L"
+            android:textColor="#fff"
+            android:textSize="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/activity_day_lundi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/lundi_add_activity_for_day"
+            app:layout_constraintStart_toEndOf="@+id/lundi_day_letter"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/lundi_code_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Spinner
+                    android:id="@+id/lundi_activity_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Spinner
+                    android:id="@+id/lundi_activity_country_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/lundi_activity_hours_1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Hours"
+                    android:inputType="number"
+                    android:textSize="14dp" />
+                <TextView
+                android:id="@+id/lundi_activity_status_1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Draft"
+                android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/lundi_add_activity_for_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="+"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/corner_color"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mardi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mardi_day_letter"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:text="M"
+            android:textColor="#fff"
+            android:textSize="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/mardi_activity_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/mardi_add_activity_for_day"
+            app:layout_constraintStart_toEndOf="@+id/mardi_day_letter"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/mardi_activity_code_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/mardi_activity_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/mardi_activity_country_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/mardi_activity_hours_1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Hours"
+                    android:inputType="number"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/mardi_activity_status_1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Draft"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mardi_add_activity_for_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="+"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/corner_color"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mercredi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mercredi_day_letter"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:text="M"
+            android:textColor="#fff"
+            android:textSize="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/mercredi_activity_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/mercredi_add_activity_for_day"
+            app:layout_constraintStart_toEndOf="@+id/mercredi_day_letter"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/mercredi_activity_code_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/mercredi_activity_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/mercredi_activity_country_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  />
+
+                <EditText
+                    android:id="@+id/mercredi_activity_hours_1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Hours"
+                    android:inputType="number"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/mercredi_activity_status_1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Draft"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mercredi_add_activity_for_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/corner_color"
+        android:layout_marginTop="10dp"
+        android:id="@+id/jeudi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/jeudi_day_letter"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:text="J"
+            android:textColor="#fff"
+            android:textSize="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/jeudi_activity_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/jeudi_add_activity_for_day"
+            app:layout_constraintStart_toEndOf="@+id/jeudi_day_letter"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/jeudi_activity_code_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/jeudi_activity_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/jeudi_activity_country_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/jeudi_activity_hours_1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Hours"
+                    android:inputType="number"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/jeudi_activity_status_1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Draft"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jeudi_add_activity_for_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/corner_color"
+        android:layout_marginTop="10dp"
+        android:id="@+id/vdd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vdd_day_letter"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:text="V"
+            android:textColor="#fff"
+            android:textSize="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/vdd_activity_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/vdd_add_activity_for_day"
+            app:layout_constraintStart_toEndOf="@+id/vdd_day_letter"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/vdd_activity_code_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/vdd_activity_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  />
+
+                <Spinner
+                    android:id="@+id/vdd_activity_country_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/vdd_activity_hours_1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Hours"
+                    android:inputType="number"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/vdd_activity_status_1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Draft"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vdd_add_activity_for_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/corner_color"
+        android:layout_marginTop="10dp"
+        android:id="@+id/smd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/smd_day_letter"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:text="S"
+            android:textColor="#fff"
+            android:textSize="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/smd_activity_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/smd_add_activity_for_day"
+            app:layout_constraintStart_toEndOf="@+id/smd_day_letter"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/smd_activity_code_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/smd_activity_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/smd_activity_country_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/smd_activity_hours_1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Hours"
+                    android:inputType="number"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/smd_activity_status_1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Draft"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/smd_add_activity_for_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/corner_color"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dm_day_letter"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:text="D"
+            android:textColor="#fff"
+            android:textSize="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/dm_activity_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/dm_add_activity_for_day"
+            app:layout_constraintStart_toEndOf="@+id/dm_day_letter"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/dm_activity_code_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/dm_activity_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/dm_activity_country_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/dm_activity_hours_1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Hours"
+                    android:inputType="number"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/dm_activity_status_1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Draft"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dm_add_activity_for_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:background="@drawable/rounded_corner"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/send_time_sheet_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Send" />
+
+
+</LinearLayout>

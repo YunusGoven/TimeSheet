@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TimeSheetMobile</string>
+    <string name="week_number">Semaine </string>
+</resources>

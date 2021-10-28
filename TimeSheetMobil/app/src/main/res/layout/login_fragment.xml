@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/d_logo"
+        app:layout_constraintBottom_toTopOf="@+id/new_pseudo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_pseudo"
+        android:paddingLeft="5dp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_color"
+        android:layout_marginTop="20dp"
+        android:hint="login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_password"
+        android:paddingLeft="5dp"
+        android:background="@drawable/corner_color"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/new_pseudo"
+        app:layout_constraintStart_toStartOf="@+id/new_pseudo"
+        app:layout_constraintTop_toBottomOf="@+id/new_pseudo" />
+
+    <TextView
+        android:id="@+id/loginMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/connect"
+        app:layout_constraintEnd_toEndOf="@+id/new_password"
+        app:layout_constraintStart_toStartOf="@+id/new_password"
+        app:layout_constraintTop_toBottomOf="@+id/new_password" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="se connecter"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/new_password"
+        app:layout_constraintStart_toStartOf="@+id/new_password"
+        app:layout_constraintTop_toBottomOf="@+id/new_password" />
+
+    <ImageView
+        android:id="@+id/connect_del"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/d_icone"
+        app:layout_constraintEnd_toStartOf="@+id/connect_go"
+        app:layout_constraintTop_toBottomOf="@+id/connect" />
+
+    <ImageView
+        android:id="@+id/connect_go"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/google_ic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/connect"
+        app:layout_constraintTop_toBottomOf="@+id/connect" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
